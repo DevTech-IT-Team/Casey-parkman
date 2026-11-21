@@ -1,0 +1,2 @@
+import React from 'react';
+export default function Flowchart({title,steps}){return <section className="flow-card"><h3>{title}</h3><div className="flow-row">{steps.map((step,i)=><React.Fragment key={step}><div className="flow-node" style={{animationDelay:`${i*.15}s`}}><span>{String(i+1).padStart(2,'0')}</span>{step}</div>{i<steps.length-1&&<div className="flow-arrow" aria-hidden="true">→</div>}</React.Fragment>)}</div></section>}
