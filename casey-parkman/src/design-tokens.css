@@ -1,0 +1,27 @@
+/* PFIN Services — Recommended launch design tokens */
+:root {
+  --pfin-navy: #072A50;
+  --pfin-navy-dark: #051D38;
+  --pfin-gold: #C99532;
+  --pfin-gold-bright: #E4B85A;
+  --pfin-ivory: #F8F5F0;
+  --pfin-silver: #C5CCD3;
+  --pfin-text: #243247;
+  --pfin-white: #FFFFFF;
+
+  --pfin-bg: var(--pfin-white);
+  --pfin-bg-alt: var(--pfin-ivory);
+  --pfin-heading: var(--pfin-navy-dark);
+  --pfin-body: var(--pfin-text);
+  --pfin-cta-bg: var(--pfin-navy);
+  --pfin-cta-text: var(--pfin-white);
+  --pfin-cta-alt-bg: var(--pfin-gold);
+  --pfin-cta-alt-text: var(--pfin-navy-dark);
+  --pfin-border: #DDE2E7;
+}
+body { color: var(--pfin-body); background: var(--pfin-bg); font-family: Inter, Manrope, system-ui, sans-serif; }
+h1,h2,h3 {color:var(--pfin-heading);}
+.pfin-button-primary { background:var(--pfin-cta-bg); color:var(--pfin-cta-text); border:2px solid var(--pfin-cta-bg); }
+.pfin-button-secondary { background:transparent; color:var(--pfin-navy); border:2px solid var(--pfin-navy); }
+.pfin-button-gold { background:var(--pfin-gold); color:var(--pfin-navy-dark); border:2px solid var(--pfin-gold); }
+/* Do not use gold text on ivory for small or regular weight text. */
